@@ -16,7 +16,7 @@ In your project pom under build / plugins add the tiles-maven-plugin with the fo
         <extensions>true</extensions>
         <configuration>
           <tiles>
-            <tile>org.avaje.ebean:enhancement-tile:1.1</tile>
+            <tile>org.avaje.ebean.tile:enhancement:1.1</tile>
           </tiles>
         </configuration>
       </plugin>
