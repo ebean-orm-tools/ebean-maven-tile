@@ -3,7 +3,7 @@
 
   <properties>
     <codegen-maven-plugin.version>1.3</codegen-maven-plugin.version>
-    <querybean-maven-plugin.version>8.1.1</querybean-maven-plugin.version>
+    <querybean-maven-plugin.version>8.2.1</querybean-maven-plugin.version>
     <ebean-maven-plugin.version>8.1.1</ebean-maven-plugin.version>
     <ebean-maven-plugin.args>debug=0</ebean-maven-plugin.args>
     <ebean-maven-plugin.target-test-classes>target/test-classes</ebean-maven-plugin.target-test-classes>
