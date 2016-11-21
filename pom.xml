@@ -4,7 +4,7 @@
 
   <groupId>org.avaje.ebean.tile</groupId>
   <artifactId>enhancement</artifactId>
-  <version>1.3</version>
+  <version>1.4-SNAPSHOT</version>
   <packaging>tile</packaging>
 
   <parent>
@@ -15,7 +15,7 @@
 
   <scm>
     <developerConnection>scm:git:git@github.com:ebean-orm-tools/ebean-maven-tile.git</developerConnection>
-    <tag>enhancement-1.3</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <build>
