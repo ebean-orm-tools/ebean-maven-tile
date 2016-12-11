@@ -2,9 +2,9 @@
 <project>
 
   <properties>
-    <codegen-maven-plugin.version>1.3</codegen-maven-plugin.version>
-    <querybean-maven-plugin.version>8.2.1</querybean-maven-plugin.version>
-    <ebean-maven-plugin.version>8.2.1</ebean-maven-plugin.version>
+    <codegen-maven-plugin.version>2.1</codegen-maven-plugin.version>
+    <querybean-maven-plugin.version>10.1.1</querybean-maven-plugin.version>
+    <ebean-maven-plugin.version>10.1.1</ebean-maven-plugin.version>
     <ebean-maven-plugin.args>debug=0</ebean-maven-plugin.args>
     <ebean-maven-plugin.target-test-classes>target/test-classes</ebean-maven-plugin.target-test-classes>
   </properties>
@@ -13,13 +13,13 @@
     <plugins>
 
       <plugin>
-        <groupId>org.avaje.ebean</groupId>
+        <groupId>io.ebean.tools</groupId>
         <artifactId>codegen-maven-plugin</artifactId>
         <version>${codegen-maven-plugin.version}</version>
       </plugin>
 
       <plugin>
-        <groupId>org.avaje.ebean</groupId>
+        <groupId>io.ebean</groupId>
         <artifactId>querybean-maven-plugin</artifactId>
         <version>${querybean-maven-plugin.version}</version>
         <executions>
@@ -48,7 +48,7 @@
       </plugin>
 
       <plugin>
-        <groupId>org.avaje.ebean</groupId>
+        <groupId>io.ebean</groupId>
         <artifactId>ebean-maven-plugin</artifactId>
         <version>${ebean-maven-plugin.version}</version>
         <executions>
