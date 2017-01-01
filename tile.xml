@@ -6,7 +6,6 @@
     <querybean-maven-plugin.version>10.1.1</querybean-maven-plugin.version>
     <ebean-maven-plugin.version>10.1.2</ebean-maven-plugin.version>
     <ebean-maven-plugin.args>debug=0</ebean-maven-plugin.args>
-    <ebean-maven-plugin.target-test-classes>target/test-classes</ebean-maven-plugin.target-test-classes>
   </properties>
 
   <build>
@@ -37,7 +36,6 @@
             <id>test</id>
             <phase>process-test-classes</phase>
             <configuration>
-              <classSource>target/test-classes</classSource>
               <transformArgs>${ebean-maven-plugin.args}</transformArgs>
             </configuration>
             <goals>
@@ -56,7 +54,6 @@
             <id>main</id>
             <phase>process-classes</phase>
             <configuration>
-              <classSource>target/classes</classSource>
               <transformArgs>${ebean-maven-plugin.args}</transformArgs>
             </configuration>
             <goals>
@@ -67,7 +64,6 @@
             <id>test</id>
             <phase>process-test-classes</phase>
             <configuration>
-              <classSource>${ebean-maven-plugin.target-test-classes}</classSource>
               <transformArgs>${ebean-maven-plugin.args}</transformArgs>
             </configuration>
             <goals>
