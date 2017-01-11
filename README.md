@@ -16,7 +16,7 @@ In your project pom under build / plugins add the tiles-maven-plugin with the fo
         <extensions>true</extensions>
         <configuration>
           <tiles>
-            <tile>org.avaje.ebean.tile:enhancement:1.1</tile>
+            <tile>org.avaje.ebean.tile:enhancement:2.5</tile>
           </tiles>
         </configuration>
       </plugin>
@@ -36,11 +36,10 @@ Effectively the ebean enhancement tile brings in 3 plugins:
   <!-- defaults, override in your project pom if needed -->
 
   <properties>
-    <codegen-maven-plugin.version>1.3</codegen-maven-plugin.version>
-    <querybean-maven-plugin.version>8.1.1</querybean-maven-plugin.version>
-    <ebean-maven-plugin.version>8.1.1</ebean-maven-plugin.version>
+    <codegen-maven-plugin.version>3.1</codegen-maven-plugin.version>
+    <querybean-maven-plugin.version>10.1.3</querybean-maven-plugin.version>
+    <ebean-maven-plugin.version>10.1.4</ebean-maven-plugin.version>
     <ebean-maven-plugin.args>debug=0</ebean-maven-plugin.args>
-    <ebean-maven-plugin.target-test-classes>target/test-classes</ebean-maven-plugin.target-test-classes>
   </properties>
 
   <!-- brought into build / plugins -->
@@ -73,11 +72,10 @@ Effectively the ebean enhancement tile brings in 3 plugins:
             <id>test</id>
             <phase>process-test-classes</phase>
             <configuration>
-              <classSource>target/test-classes</classSource>
               <transformArgs>${ebean-maven-plugin.args}</transformArgs>
             </configuration>
             <goals>
-              <goal>enhance</goal>
+              <goal>testEnhance</goal>
             </goals>
           </execution>
         </executions>
@@ -92,7 +90,6 @@ Effectively the ebean enhancement tile brings in 3 plugins:
             <id>main</id>
             <phase>process-classes</phase>
             <configuration>
-              <classSource>target/classes</classSource>
               <transformArgs>${ebean-maven-plugin.args}</transformArgs>
             </configuration>
             <goals>
@@ -103,11 +100,10 @@ Effectively the ebean enhancement tile brings in 3 plugins:
             <id>test</id>
             <phase>process-test-classes</phase>
             <configuration>
-              <classSource>${ebean-maven-plugin.target-test-classes}</classSource>
               <transformArgs>${ebean-maven-plugin.args}</transformArgs>
             </configuration>
             <goals>
-              <goal>enhance</goal>
+              <goal>testEnhance</goal>
             </goals>
           </execution>
         </executions>
