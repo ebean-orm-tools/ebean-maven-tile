@@ -3,8 +3,7 @@
 
   <properties>
     <codegen-maven-plugin.version>3.1</codegen-maven-plugin.version>
-    <querybean-maven-plugin.version>10.1.3</querybean-maven-plugin.version>
-    <ebean-maven-plugin.version>10.1.4</ebean-maven-plugin.version>
+    <ebean-maven-plugin.version>10.1.7</ebean-maven-plugin.version>
     <ebean-maven-plugin.args>debug=0</ebean-maven-plugin.args>
   </properties>
 
@@ -15,34 +14,6 @@
         <groupId>io.ebean.tools</groupId>
         <artifactId>codegen-maven-plugin</artifactId>
         <version>${codegen-maven-plugin.version}</version>
-      </plugin>
-
-      <plugin>
-        <groupId>io.ebean</groupId>
-        <artifactId>querybean-maven-plugin</artifactId>
-        <version>${querybean-maven-plugin.version}</version>
-        <executions>
-          <execution>
-            <id>main</id>
-            <phase>process-classes</phase>
-            <configuration>
-              <transformArgs>${ebean-maven-plugin.args}</transformArgs>
-            </configuration>
-            <goals>
-              <goal>enhance</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>test</id>
-            <phase>process-test-classes</phase>
-            <configuration>
-              <transformArgs>${ebean-maven-plugin.args}</transformArgs>
-            </configuration>
-            <goals>
-              <goal>testEnhance</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
 
       <plugin>
