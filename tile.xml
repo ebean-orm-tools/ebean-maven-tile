@@ -3,7 +3,7 @@
 
   <properties>
     <codegen-maven-plugin.version>3.1</codegen-maven-plugin.version>
-    <ebean-maven-plugin.version>10.2.1</ebean-maven-plugin.version>
+    <ebean-maven-plugin.version>10.3.1</ebean-maven-plugin.version>
     <ebean-maven-plugin.args>debug=0</ebean-maven-plugin.args>
   </properties>
 
