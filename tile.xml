@@ -2,7 +2,7 @@
 <project>
 
   <properties>
-    <codegen-maven-plugin.version>4.1</codegen-maven-plugin.version>
+    <codegen-maven-plugin.version>4.2</codegen-maven-plugin.version>
     <ebean-maven-plugin.version>11.10.1</ebean-maven-plugin.version>
     <ebean-maven-plugin.args>debug=0</ebean-maven-plugin.args>
   </properties>
