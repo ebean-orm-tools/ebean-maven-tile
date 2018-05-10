@@ -12,11 +12,11 @@ In your project pom under build / plugins add the tiles-maven-plugin with the fo
       <plugin>
         <groupId>io.repaint.maven</groupId>
         <artifactId>tiles-maven-plugin</artifactId>
-        <version>2.8</version>
+        <version>2.10</version>
         <extensions>true</extensions>
         <configuration>
           <tiles>
-            <tile>org.avaje.ebean.tile:enhancement:2.5</tile>
+            <tile>org.avaje.ebean.tile:enhancement:5.6</tile>
           </tiles>
         </configuration>
       </plugin>
@@ -36,9 +36,8 @@ Effectively the ebean enhancement tile brings in 3 plugins:
   <!-- defaults, override in your project pom if needed -->
 
   <properties>
-    <codegen-maven-plugin.version>3.1</codegen-maven-plugin.version>
-    <querybean-maven-plugin.version>10.1.3</querybean-maven-plugin.version>
-    <ebean-maven-plugin.version>10.1.4</ebean-maven-plugin.version>
+    <codegen-maven-plugin.version>4.2</codegen-maven-plugin.version>
+    <ebean-maven-plugin.version>11.11.2</ebean-maven-plugin.version>
     <ebean-maven-plugin.args>debug=0</ebean-maven-plugin.args>
   </properties>
 
@@ -48,41 +47,13 @@ Effectively the ebean enhancement tile brings in 3 plugins:
     <plugins>
 
       <plugin>
-        <groupId>org.avaje.ebean</groupId>
+        <groupId>io.ebean.tools</groupId>
         <artifactId>codegen-maven-plugin</artifactId>
         <version>${codegen-maven-plugin.version}</version>
       </plugin>
 
       <plugin>
-        <groupId>org.avaje.ebean</groupId>
-        <artifactId>querybean-maven-plugin</artifactId>
-        <version>${querybean-maven-plugin.version}</version>
-        <executions>
-          <execution>
-            <id>main</id>
-            <phase>process-classes</phase>
-            <configuration>
-              <transformArgs>${ebean-maven-plugin.args}</transformArgs>
-            </configuration>
-            <goals>
-              <goal>enhance</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>test</id>
-            <phase>process-test-classes</phase>
-            <configuration>
-              <transformArgs>${ebean-maven-plugin.args}</transformArgs>
-            </configuration>
-            <goals>
-              <goal>testEnhance</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-
-      <plugin>
-        <groupId>org.avaje.ebean</groupId>
+        <groupId>io.ebean</groupId>
         <artifactId>ebean-maven-plugin</artifactId>
         <version>${ebean-maven-plugin.version}</version>
         <executions>
