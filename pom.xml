@@ -4,7 +4,7 @@
 
   <groupId>io.ebean.tile</groupId>
   <artifactId>enhancement</artifactId>
-  <version>7.5-SNAPSHOT</version>
+  <version>7.5</version>
   <packaging>tile</packaging>
 
   <parent>
@@ -15,7 +15,7 @@
 
   <scm>
     <developerConnection>scm:git:git@github.com:ebean-orm-tools/ebean-maven-tile.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>enhancement-7.5</tag>
   </scm>
 
   <build>
