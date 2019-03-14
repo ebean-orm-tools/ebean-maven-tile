@@ -2,19 +2,12 @@
 <project>
 
   <properties>
-    <codegen-maven-plugin.version>4.2</codegen-maven-plugin.version>
-    <ebean-maven-plugin.version>11.34.1</ebean-maven-plugin.version>
+    <ebean-maven-plugin.version>11.35.1</ebean-maven-plugin.version>
     <ebean-maven-plugin.args>debug=0</ebean-maven-plugin.args>
   </properties>
 
   <build>
     <plugins>
-
-      <plugin>
-        <groupId>io.ebean.tools</groupId>
-        <artifactId>codegen-maven-plugin</artifactId>
-        <version>${codegen-maven-plugin.version}</version>
-      </plugin>
 
       <plugin>
         <groupId>io.ebean</groupId>
