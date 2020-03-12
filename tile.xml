@@ -2,7 +2,7 @@
 <project>
 
   <properties>
-    <ebean-maven-plugin.version>12.1.14</ebean-maven-plugin.version>
+    <ebean-maven-plugin.version>12.1.15</ebean-maven-plugin.version>
     <ebean-maven-plugin.args>debug=0</ebean-maven-plugin.args>
   </properties>
 
