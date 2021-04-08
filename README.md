@@ -12,11 +12,11 @@ In your project pom under build / plugins add the tiles-maven-plugin with the fo
       <plugin>
         <groupId>io.repaint.maven</groupId>
         <artifactId>tiles-maven-plugin</artifactId>
-        <version>2.16</version>
+        <version>2.19</version>
         <extensions>true</extensions>
         <configuration>
           <tiles>
-            <tile>io.ebean.tile:enhancement:12.1.6</tile>
+            <tile>io.ebean.tile:enhancement:12.8.2</tile>
           </tiles>
         </configuration>
       </plugin>
