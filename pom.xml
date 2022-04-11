@@ -4,7 +4,7 @@
 
   <groupId>io.ebean.tile</groupId>
   <artifactId>enhancement</artifactId>
-  <version>13.2.0</version>
+  <version>13.3.0</version>
   <packaging>tile</packaging>
 
   <parent>
