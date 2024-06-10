@@ -9,7 +9,7 @@
 
   <groupId>io.ebean.tile</groupId>
   <artifactId>enhancement</artifactId>
-  <version>14.3.0</version>
+  <version>14.3.1</version>
   <packaging>tile</packaging>
 
   <scm>
